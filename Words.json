@@ -1,0 +1,36 @@
+{
+  "easy": [
+    "cat",
+    "dog",
+    "sun",
+    "hat",
+    "car",
+    "boy",
+    "pen",
+    "paper",
+    "book",
+    "chair"
+  ],
+  "normal": [
+    "cloud",
+    "water",
+    "chair",
+    "table",
+    "mouse",
+    "keyboard",
+    "speaker",
+    "desktop"
+  ],
+  "hard": [
+    "dictionary",
+    "concatenate",
+    "philosophy",
+    "psychology",
+    "university",
+    "communication",
+    "information",
+    "technology",
+    "generation",
+    "abbreviation"
+  ]
+}

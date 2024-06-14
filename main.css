@@ -1,0 +1,135 @@
+:root {
+  --main-color: #03a9f4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+.game .name {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.game .container {
+  margin: auto;
+  max-width: 900px;
+}
+.message {
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+.message span {
+  font-weight: bold;
+  color: #009688;
+}
+.message span::before {
+  content: "[ ";
+}
+.message span::after {
+  content: " ]";
+}
+.start {
+  background-color: #009688;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.the-word {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 60px;
+  color: var(--main-color);
+  user-select: none;
+  font-weight: bold;
+}
+.input {
+  padding: 10px;
+  width: 100%;
+  margin: 15px 0;
+  border: 3px solid var(--main-color);
+  border-radius: 6px;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  text-transform: capitalize;
+  caret-color: var(--main-color);
+}
+.input:focus {
+  outline: none;
+}
+.upcoming-words {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 6px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+.upcoming-words div {
+  background-color: #009688;
+  color: #fff;
+  padding: 6px 3px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 4px;
+}
+.control {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 6px;
+}
+.control span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+.congrats-popup,
+.game-over-popup {
+  position: fixed;
+  background-color: var(--main-color);
+  padding: 100px 20px;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  display: none;
+  color: #fff;
+}
+.congrats-popup #play-again-button,
+.game-over-popup #play-again {
+  background-color: #ff5722;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+}
